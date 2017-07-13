@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>easyUI布局页面</title>
+		<!--导入easyUI相关构件:三个JS两个CSS-->
+		<!--easyUI依赖jQuery-->
+		<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+		<!--easyUI的功能模块-->
+		<script type="text/javascript" src="../js/easyui/jquery.easyui.min.js"></script>
+		<!--国际化-->
+		<script type="text/javascript" src="../js/easyui/locale/easyui-lang-zh_CN.js"></script>
+		<!--主题样式-->
+		<link rel="stylesheet" type="text/css" href="../js/easyui/themes/default/easyui.css" />
+		<!--图标样式-->
+		<link rel="stylesheet" type="text/css" href="../js/easyui/themes/icon.css" />
+
+		<script type="text/javascript">
+			$(function() {
+				//警告窗口
+				//$.messager.alert("第一标题","第二内容","warning");
+				//确认窗口
+				/*$.messager.confirm("这个是确认窗口","你确认吗，哈哈哈哈",function(result){
+					if(result==true){
+						alert("yes:菲菲大傻逼~~");
+					}else{
+						alert("no:菲菲大傻逼~~");
+					}
+					
+				});*/
+				//输入窗口
+				/*	$.messager.prompt("这是输入窗的 标题","这是你需要输入的内容的问题",function(val){
+			 		alert("你的名字是："+val);
+			 		
+			 	})
+				 */
+				//右下角窗口
+				/*$.messager.show({
+					title: 'My Title',
+					msg: '你是一个大傻逼呀！！！！！！！！！！说的就是你，耿誉菲.',
+					timeout: 5000,
+					showType: 'slide'
+				});*/
+				
+				//进度条消息
+				$.messager.progress({
+					interval:1000
+				});
+				window.setTimeout("$.messager.progress('close')",5000);
+			});
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>easyUI布局页面</title>
+		<!--导入easyUI相关构件:三个JS两个CSS-->
+		<!--easyUI依赖jQuery-->
+		<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+		<!--easyUI的功能模块-->
+		<script type="text/javascript" src="../js/easyui/jquery.easyui.min.js"></script>
+		<!--国际化-->
+		<script type="text/javascript" src="../js/easyui/locale/easyui-lang-zh_CN.js"></script>
+		<!--主题样式-->
+		<link rel="stylesheet" type="text/css" href="../js/easyui/themes/default/easyui.css" />
+		<!--图标样式-->
+		<link rel="stylesheet" type="text/css" href="../js/easyui/themes/icon.css" />
+		
+	
+	</head>
+
+	<body class="easyui-layout">
+
+		<a href="javascript:void(0)" class="easyui-menubutton" data-options="iconCls:'icon-save',menu:'#mm'">下拉菜单</a>
+
+		<!--添加下拉菜单的具体内容-->
+		<div id="mm" style="width: 120px;">
+			<div data-options="iconCls:'icon-save'">菜单1</div>
+			<div data-options="iconCls:'icon-save'">菜单2</div>
+			<div data-options="iconCls:'icon-save'">菜单3</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>消息框的使用</title>
+		<script type="text/javascript" src="../js/jquery-1.8.3.js" ></script>
+		<script type="text/javascript" src="../js/easyui/jquery.easyui.min.js" ></script>
+		<script type="text/javascript" src="../js/easyui/locale/easyui-lang-zh_CN.js" ></script>
+		<link rel="stylesheet" href="../js/easyui/themes/default/easyui.css" />
+		<link rel="stylesheet" href="../js/easyui/themes/icon.css" />
+		<script type="text/javascript">
+			$(function(){
+				//给打开窗口添加点击事件
+				 $("#openbtn").click(function(){
+				 	
+				 	$("#windowbtn").window("open");
+				 	
+				 });
+			});
+		</script>
+	</head>
+	<body>
+		
+		<div class="easyui-window" style="width: 200px;height:200px;" 
+			data-options="title:'这是窗口的标题',modal:true,closed:true" 
+			id="windowbtn">
+			这是一个窗口，哈哈哈哈 </div>
+			
+			
+			<input type="button" value="打开弹窗" id="openbtn"  />
+	</body>
+</html>
